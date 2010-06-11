@@ -1,0 +1,8 @@
+.autotest
+History.txt
+Manifest.txt
+README.txt
+Rakefile
+bin/newbase60
+lib/newbase60.rb
+test/test_newbase60.rb
