@@ -1,12 +1,16 @@
 class Newbase60
   require "time"
   require "date"
-  VERSION = '0.0.1'
-  
+  VERSION = '1.0.0'
+
   def initialize(str)
     @base_60 = str
   end
-  
+
+  def to_s
+    @base_60
+  end
+
   # converts NewBase60 into base10 integer
   def to_i
     num = 0
@@ -42,10 +46,14 @@ class Newbase60
     num
   end
 
-  # converts NewBase60 characters into a Time object
-  def to_time
-    # days since epoch * seconds * minutes * hours + timezone 
-    Time.at(Newbase60.new(@base_60).to_i * 60 * 60 * 24 + Time.now.gmtoff.abs)
+  # converts NewBase60 characters into a Date object
+  def to_date
+    # HACK this is smelly
+
+    # days since epoch * seconds * minutes * hours + timezone
+    time = Time.at(Newbase60.new(@base_60).to_i * 60 * 60 * 24 + Time.now.gmtoff.abs)
+    # parse the Time object into a Date object
+    Date.parse(time.strftime("%Y/%m/%d"))
     # 14:48 on 2010-06-04
   end
 end
@@ -87,11 +95,9 @@ class Integer
   end
 end
 
-# converts Time object into NewBase60
-class Time
+# converts Date object into NewBase60
+class Date
   def to_sxg
-    the_when   = self + Time.now.gmtoff.abs
-    epoch_days = the_when.to_i / 60 / 60 / 24
-    epoch_days.to_sxg
+    (self - Date.parse("1970/01/01")).to_i.to_sxg
   end
 end

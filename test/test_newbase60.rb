@@ -8,10 +8,14 @@ class TestNewbase60 < Test::Unit::TestCase
     assert_not_equal Newbase60.new("464").to_i, 12345
   end
 
-  def test_base60_to_time
+  def test_base60_to_date
+    assert_equal     Newbase60.new("464").to_date, Date.parse("2010/06/04")
+    assert_not_equal Newbase60.new("464").to_date, Date.parse("2010/06/05")
   end
 
-  def test_time_to_base60
+  def test_date_to_base60
+    assert_equal     Date.parse("2010/06/04").to_sxg, Newbase60.new("464").to_s
+    assert_not_equal Date.parse("2010/06/05").to_sxg, Newbase60.new("464")
   end
 
   def test_base10_to_base60
