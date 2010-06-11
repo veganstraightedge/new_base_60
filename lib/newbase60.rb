@@ -1,5 +1,6 @@
 class Newbase60
   require "time"
+  require "date"
   VERSION = '0.0.1'
   
   def initialize(str)
@@ -39,16 +40,15 @@ class Newbase60
     end
 
     num
-    
   end
 
   # converts NewBase60 characters into a Time object
   def to_time
     # days since epoch * seconds * minutes * hours + timezone 
-    Time.at(@base_60.to_i * 60 * 60 * 24 + Time.now.gmtoff.abs)
+    Time.at(Newbase60.new(@base_60).to_i * 60 * 60 * 24 + Time.now.gmtoff.abs)
+    # 14:48 on 2010-06-04
   end
 end
-
 
 class Integer
   # converts base10 integers into NewBase60
