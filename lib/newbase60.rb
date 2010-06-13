@@ -46,7 +46,7 @@ class Newbase60
     num
   end
 
-  # converts NewBase60 characters into a Date object
+  # converts NewBase60 string into a Date object
   def to_date
     # HACK this is smelly
 
@@ -54,7 +54,6 @@ class Newbase60
     time = Time.at(Newbase60.new(@base_60).to_i * 60 * 60 * 24 + Time.now.gmtoff.abs)
     # parse the Time object into a Date object
     Date.parse(time.strftime("%Y/%m/%d"))
-    # 14:48 on 2010-06-04
   end
 end
 
