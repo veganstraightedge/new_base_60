@@ -4,8 +4,8 @@ require "time"
 class Newbase60
   VERSION = '1.0.1'
 
-  def initialize(str)
-    @base_60 = str
+  def initialize(base_60)
+    @base_60 = base_60
   end
 
   def to_s
