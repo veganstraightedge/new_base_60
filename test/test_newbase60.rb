@@ -1,6 +1,5 @@
 require "test/unit"
 require "newbase60"
-require "date"
 
 class TestNewbase60 < Test::Unit::TestCase
   def test_base60_to_base10
