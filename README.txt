@@ -18,7 +18,7 @@ O : capital   O (looks like a 0 : zero)
 
 == SYNOPSIS:
 
-require "Newbase60"
+require "newbase60"
 n = Newbase60.new("464")# => #<Newbase60:0x1011ea468 @base_60="464">
 puts n.to_i             # => 14764
 puts n.to_i.to_sxg      # => "464"
