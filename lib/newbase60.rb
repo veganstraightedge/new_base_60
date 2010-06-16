@@ -3,6 +3,7 @@ require "time"
 
 class Newbase60
   VERSION = '1.0.1'
+  VOCABULARY = "0123456789ABCDEFGHJKLMNPQRSTUVWXYZ_abcdefghijkmnopqrstuvwxyz"
 
   def initialize(base_60)
     @base_60 = base_60
@@ -62,15 +63,13 @@ class Integer
   # converts base10 integers into NewBase60
   def to_sxg
     num = self
-
-    sxg        = ""
-    vocabulary = "0123456789ABCDEFGHJKLMNPQRSTUVWXYZ_abcdefghijkmnopqrstuvwxyz"
+    sxg = ""
 
     return 0 if num.nil? || num.zero?
 
     while num > 0 do
       mod = num % 60
-      sxg = "#{vocabulary[mod,1]}#{sxg}"
+      sxg = "#{Newbase60::VOCABULARY[mod,1]}#{sxg}"
       num = (num - mod) / 60
     end
 
