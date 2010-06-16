@@ -1,7 +1,7 @@
 .autotest
-History.txt
+CHANGELOG.rdoc
 Manifest.txt
-README.txt
+README.rdoc
 Rakefile
 lib/newbase60.rb
 test/test_newbase60.rb
