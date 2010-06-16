@@ -62,10 +62,10 @@ end
 class Integer
   # converts base10 integers into NewBase60
   def to_sxg
+    return self if zero?
+
     num = self
     sxg = ""
-
-    return 0 if num.nil? || num.zero?
 
     while num > 0 do
       mod = num % 60
