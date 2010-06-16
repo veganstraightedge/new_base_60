@@ -17,29 +17,18 @@ class Newbase60
   def to_i
     num = 0
 
-    @base_60.length.times do |index| # iterate over each letter
-      char = @base_60[index]         # grab the ascii value of the current letter
-
-      if (48..57).include?(char)
-        char -= 48
-      elsif (65..72).include?(char)
-        char -= 55
-      elsif (char == 73 || char == 108) # typo capital I, lowercase l to 1
-        char = 1
-      elsif (74..78).include?(char)
-        char -= 56
-      elsif (char == 79) # error correct typo capital O to 0
-        char = 0
-      elsif (80..90).include?(char)
-        char -= 57
-      elsif (char==95) # underscore
-        char = 34
-      elsif (97..107).include?(char)
-        char -= 62
-      elsif (109..122).include?(char)
-        char -= 63
-      else
-        char = 0 # treat all other noise as 0
+    @base_60.bytes do |char|
+      case char
+      when 48..57   then char -= 48
+      when 65..72   then char -= 55
+      when 73, 108  then char  = 1  # typo capital I, lowercase l to 1
+      when 74..78   then char -= 56
+      when 79       then char  = 0  # error correct typo capital O to 0
+      when 80..90   then char -= 57
+      when 95       then char  = 34
+      when 97..107  then char -= 62
+      when 109..122 then char -= 63
+      else               char  = 0  # treat all other noise as 0
       end
 
       num = 60 * num + char
