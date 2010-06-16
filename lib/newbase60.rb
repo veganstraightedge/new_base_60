@@ -13,7 +13,8 @@ class Newbase60
     @base_60
   end
 
-  # converts NewBase60 into base10 integer
+  # Converts into a base 10 integer.
+
   def to_i
     num = 0
 
@@ -37,21 +38,25 @@ class Newbase60
     num
   end
 
-  # converts NewBase60 string into a Date object
+  # Converts into a Date.
+
   def to_date
     # HACK this is smelly
 
     # days since epoch * seconds * minutes * hours + timezone
-    time = Time.at(Newbase60.new(@base_60).to_i * 60 * 60 * 24 + Time.now.gmtoff.abs)
-    # parse the Time object into a Date object
+    time = Time.at(Newbase60.new(@base_60).to_i *
+                   60 * 60 * 24 + Time.now.gmtoff.abs)
+
     Date.parse(time.strftime("%Y/%m/%d"))
   end
 end
 
 class Integer
-  # converts base10 integers into NewBase60
+
+  # Converts a base 10 integer into a NewBase60 string.
+
   def to_sxg
-    return self if zero?
+    return "" if zero?
 
     num = self
     sxg = ""
@@ -65,7 +70,9 @@ class Integer
     sxg
   end
 
-  # converts base10 integers into NewBase60 padding with leading zeroes
+  # Converts a base 10 integer into a NewBase60 string, padding with
+  # leading zeroes.
+
   def to_sxgf(padding)
     num = self
 
@@ -83,8 +90,10 @@ class Integer
   end
 end
 
-# converts Date object into NewBase60
 class Date
+
+  # Converts into a NewBase60 string.
+
   def to_sxg
     (self - Date.parse("1970/01/01")).to_i.to_sxg
   end
