@@ -1,6 +1,7 @@
+require "date"
+require "time"
+
 class Newbase60
-  require "time"
-  require "date"
   VERSION = '1.0.1'
 
   def initialize(str)
