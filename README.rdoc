@@ -4,8 +4,8 @@
 
 == DESCRIPTION:
 
-Handy Conversion Sexagesimal (base 60) for Short URLs  
-Cuts out ambiguous characters like:  
+Handy Conversion Sexagesimal (base 60) for Short URLs
+Cuts out ambiguous characters like:
 * l : lowercase l (looks like a 1 : one)
 * I : capital   I (looks like a 1 : one)
 * O : capital   O (looks like a 0 : zero)
@@ -19,12 +19,12 @@ Cuts out ambiguous characters like:
 == SYNOPSIS:
 
 require "newbase60"
-n = Newbase60.new("464")# => #<Newbase60:0x1011ea468 @base_60="464">  
-puts n.to_i             # => 14764  
-puts n.to_i.to_sxg      # => "464"  
-puts n.to_date          # => #<Date: 4910703/2,0,2299161>  
-puts n.to_date.to_s     # => "2010-06-04"  
-puts n.to_date.to_sxg   # => "464"  
+n = Newbase60.new("464")# => #<Newbase60:0x1011ea468 @base_60="464">
+puts n.to_i             # => 14764
+puts n.to_i.to_sxg      # => "464"
+puts n.to_date          # => #<Date: 4910703/2,0,2299161>
+puts n.to_date.to_s     # => "2010-06-04"
+puts n.to_date.to_sxg   # => "464"
 
 == INSTALL:
 
@@ -32,6 +32,6 @@ puts n.to_date.to_sxg   # => "464"
 
 == LICENSE:
 
-PUBLIC DOMAIN.  
-Your heart is as free as the air you breathe.  
-The ground you stand on is liberated territory.  
+PUBLIC DOMAIN.
+Your heart is as free as the air you breathe.
+The ground you stand on is liberated territory.
