@@ -1,3 +1,10 @@
+=== 1.0.2 / 2010-06-21
+
+* 2 minor enhancement
+
+  * Code cleanup thanks to John Barnette
+  * Credits section added to README, props to Tantek Çelik for original idea
+
 === 1.0.1 / 2010-06-11
 
 * 1 minor enhancement

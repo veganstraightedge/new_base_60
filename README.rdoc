@@ -10,6 +10,8 @@ Cuts out ambiguous characters like:
 * I : capital   I (looks like a 1 : one)
 * O : capital   O (looks like a 0 : zero)
 
+Based on work done by Tantek Çelik : http://tantek.pbworks.com/NewBase60
+
 == FEATURES/PROBLEMS:
 
 * Converts Base10 (like 147124) to Base60 (like fs4)
@@ -27,6 +29,14 @@ puts n.to_date.to_s     # => "2010-06-04"
 puts n.to_date.to_sxg   # => "464"
 
 == INSTALL:
+
+* sudo gem install newbase60
+
+== CREDITS:
+
+* Original Idea : Tantek Çelik
+* Ruby Port : Shane Becker
+* Lotsa Cleanup : John Barnette
 
 * sudo gem install newbase60
 

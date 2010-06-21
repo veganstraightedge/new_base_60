@@ -2,7 +2,7 @@ require "date"
 require "time"
 
 class Newbase60
-  VERSION = '1.0.1'
+  VERSION = '1.0.2'
   VOCABULARY = "0123456789ABCDEFGHJKLMNPQRSTUVWXYZ_abcdefghijkmnopqrstuvwxyz"
 
   def initialize(base_60)
@@ -14,7 +14,6 @@ class Newbase60
   end
 
   # Converts into a base 10 integer.
-
   def to_i
     num = 0
 
@@ -39,10 +38,8 @@ class Newbase60
   end
 
   # Converts into a Date.
-
   def to_date
     # HACK this is smelly
-
     # days since epoch * seconds * minutes * hours + timezone
     time = Time.at(Newbase60.new(@base_60).to_i *
                    60 * 60 * 24 + Time.now.gmtoff.abs)
