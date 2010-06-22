@@ -20,13 +20,15 @@ Based on work done by Tantek Çelik : http://tantek.pbworks.com/NewBase60
 
 == SYNOPSIS:
 
-require "newbase60"
-n = Newbase60.new("464")# => #<Newbase60:0x1011ea468 @base_60="464">
-puts n.to_i             # => 14764
-puts n.to_i.to_sxg      # => "464"
-puts n.to_date          # => #<Date: 4910703/2,0,2299161>
-puts n.to_date.to_s     # => "2010-06-04"
-puts n.to_date.to_sxg   # => "464"
+How to use:
+
+  require "newbase60"
+  n = Newbase60.new("464")# => #<Newbase60:0x1011ea468 @base_60="464">
+  puts n.to_i             # => 14764
+  puts n.to_i.to_sxg      # => "464"
+  puts n.to_date          # => #<Date: 4910703/2,0,2299161>
+  puts n.to_date.to_s     # => "2010-06-04"
+  puts n.to_date.to_sxg   # => "464"
 
 == INSTALL:
 
