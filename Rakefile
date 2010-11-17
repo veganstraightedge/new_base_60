@@ -3,6 +3,8 @@ require "hoe"
 
 Hoe.plugins.delete :rubyforge
 
+Hoe.plugin :doofus, :git
+
 Hoe.spec "new_base_60" do
   developer "Shane Becker", "veganstraightedge@example.com"
 
