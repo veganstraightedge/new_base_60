@@ -1,3 +1,9 @@
+=== 1.0.3 / 2010-11-16
+
+* 1 minor enhancement
+
+  * Changed named from newbase60 to new_base_60
+
 === 1.0.2 / 2010-06-21
 
 * 2 minor enhancement

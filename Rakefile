@@ -1,7 +1,7 @@
 require 'rubygems'
 require 'hoe'
 
-Hoe.spec 'newbase60' do
+Hoe.spec 'new_base_60' do
   developer('Shane Becker', 'veganstraightedge@example.com')
 
   self.extra_rdoc_files = Dir["*.rdoc"]

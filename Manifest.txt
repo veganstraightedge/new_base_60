@@ -3,5 +3,5 @@ CHANGELOG.rdoc
 Manifest.txt
 README.rdoc
 Rakefile
-lib/newbase60.rb
-test/test_newbase60.rb
+lib/new_base_60.rb
+test/test_new_base_60.rb

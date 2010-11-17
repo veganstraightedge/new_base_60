@@ -1,6 +1,6 @@
-= newbase60
+= new_base_60
 
-* http://github.com/veganstraightedge/NewBase60
+* http://github.com/veganstraightedge/New_base_60
 
 == DESCRIPTION:
 
@@ -10,7 +10,7 @@ Cuts out ambiguous characters like:
 * I : capital   I (looks like a 1 : one)
 * O : capital   O (looks like a 0 : zero)
 
-Based on work done by Tantek Çelik : http://tantek.pbworks.com/NewBase60
+Based on work done by Tantek Çelik : http://tantek.pbworks.com/New_base_60
 
 == FEATURES/PROBLEMS:
 
@@ -22,8 +22,8 @@ Based on work done by Tantek Çelik : http://tantek.pbworks.com/NewBase60
 
 How to use:
 
-  require "newbase60"
-  n = Newbase60.new("464")# => #<Newbase60:0x1011ea468 @base_60="464">
+  require "new_base_60"
+  n = New_base_60.new("464")# => #<New_base_60:0x1011ea468 @base_60="464">
   puts n.to_i             # => 14764
   puts n.to_i.to_sxg      # => "464"
   puts n.to_date          # => #<Date: 4910703/2,0,2299161>
@@ -32,7 +32,7 @@ How to use:
 
 == INSTALL:
 
-* sudo gem install newbase60
+* sudo gem install new_base_60
 
 == CREDITS:
 
@@ -40,7 +40,7 @@ How to use:
 * Ruby Port : Shane Becker
 * Lotsa Cleanup : John Barnette
 
-* sudo gem install newbase60
+* sudo gem install new_base_60
 
 == LICENSE:
 
