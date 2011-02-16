@@ -1,20 +1,20 @@
 require "test/unit"
 require "new_base_60"
 
-class TestNew_base_60 < Test::Unit::TestCase
+class TestNewBase60 < Test::Unit::TestCase
   def test_base60_to_base10
-    assert_equal     New_base_60.new("464").to_i, 14764
-    assert_not_equal New_base_60.new("464").to_i, 12345
+    assert_equal     NewBase60.new("464").to_i, 14764
+    assert_not_equal NewBase60.new("464").to_i, 12345
   end
 
   def test_base60_to_date
-    assert_equal     New_base_60.new("464").to_date, Date.parse("2010/06/04")
-    assert_not_equal New_base_60.new("464").to_date, Date.parse("2010/06/05")
+    assert_equal     NewBase60.new("464").to_date, Date.parse("2010/06/04")
+    assert_not_equal NewBase60.new("464").to_date, Date.parse("2010/06/05")
   end
 
   def test_date_to_base60
-    assert_equal     Date.parse("2010/06/04").to_sxg, New_base_60.new("464").to_s
-    assert_not_equal Date.parse("2010/06/05").to_sxg, New_base_60.new("464")
+    assert_equal     Date.parse("2010/06/04").to_sxg, NewBase60.new("464").to_s
+    assert_not_equal Date.parse("2010/06/05").to_sxg, NewBase60.new("464")
   end
 
   def test_base10_to_base60

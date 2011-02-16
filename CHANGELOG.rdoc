@@ -1,3 +1,9 @@
+=== 1.0.4 / 2011-02-15
+
+* 1 minor enhancement
+
+  * Changed class name from new_base_60 to NewBase60
+
 === 1.0.3 / 2010-11-16
 
 * 1 minor enhancement
