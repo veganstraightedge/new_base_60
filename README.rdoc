@@ -1,6 +1,6 @@
 = new_base_60
 
-* http://github.com/veganstraightedge/New_base_60
+* http://github.com/veganstraightedge/new_base_60
 
 == DESCRIPTION:
 
@@ -23,7 +23,7 @@ Based on work done by Tantek Çelik : http://tantek.pbworks.com/New_base_60
 How to use:
 
   require "new_base_60"
-  n = New_base_60.new("464")# => #<New_base_60:0x1011ea468 @base_60="464">
+  n = NewBase60.new("464")# => #<NewBase60:0x1011ea468 @base_60="464">
   puts n.to_i             # => 14764
   puts n.to_i.to_sxg      # => "464"
   puts n.to_date          # => #<Date: 4910703/2,0,2299161>
@@ -39,8 +39,6 @@ How to use:
 * Original Idea : Tantek Çelik
 * Ruby Port : Shane Becker
 * Lotsa Cleanup : John Barnette
-
-* sudo gem install new_base_60
 
 == LICENSE:
 
