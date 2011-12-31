@@ -67,20 +67,12 @@ class Integer
 
   # Converts a base 10 integer into a NewBase60 string,
   # padding with leading zeroes.
-  def to_sxgf(padding)
-    num = self
+  def to_sxgf(padding=1)
+    str = to_sxg
 
-    str = num.to_sxg
-
-    padding = 1 if padding.nil?
     padding -= str.length
 
-    while padding > 0
-      str = "0#{str}"
-      padding -= 1
-    end
-
-    str
+    padding.times.map { "0" }.join + str
   end
 end
 
