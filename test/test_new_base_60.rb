@@ -8,6 +8,8 @@ class TestCase < MiniTest::Spec
   end
 
   def test_base60_to_date
+    assert NewBase60.new("").to_date == Date.parse("1970/01/01")
+    assert NewBase60.new("4JG").to_date == Date.parse("2012/06/05")
     assert NewBase60.new("464").to_date == Date.parse("2010/06/04")
     refute NewBase60.new("464").to_date == Date.parse("2010/06/05")
   end
