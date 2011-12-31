@@ -39,12 +39,7 @@ class NewBase60
 
   # Converts into a Date.
   def to_date
-    # HACK this is smelly
-    # days since epoch * seconds * minutes * hours + timezone
-    time = Time.at(NewBase60.new(@base_60).to_i *
-                   60 * 60 * 24 + Time.now.gmtoff.abs)
-
-    Date.parse(time.strftime("%Y/%m/%d"))
+    Time.at(to_i * 60 * 60 * 24).utc.to_date
   end
 end
 
