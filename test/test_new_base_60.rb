@@ -23,6 +23,9 @@ class TestCase < MiniTest::Spec
   end
 
   def test_base10_to_base60_with_leading_zeroes
+    assert 14764.to_sxgf(1) == "464"
+    assert 14764.to_sxgf(5) == "00464"
+    assert 14764.to_sxgf()  == "464"
     assert 14764.to_sxgf(9) == "000000464"
     refute 12345.to_sxgf(9) == "000000464"
   end
