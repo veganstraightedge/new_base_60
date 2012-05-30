@@ -15,7 +15,7 @@ Based on work done by Tantek Çelik : http://tantek.pbworks.com/New_base_60
 == FEATURES/PROBLEMS:
 
 * Converts Base10 (like 147124) to Base60 (like fs4)
-* Converts Base60 (like fs4) to Base60 (like 147124)
+* Converts Base60 (like fs4) to Base10 (like 147124)
 * Converts Base60 (like fs4) to a Time object (Mon Oct 23 23:00:00 -0800 2372)
 
 == SYNOPSIS:
