@@ -1,3 +1,9 @@
+=== 1.0.6 / 2013-01-10
+
+* 1 minor enhancement
+
+  * Added command line script `sd` and `ds` for converting on the command line
+
 === 1.0.4 / 2011-02-15
 
 * 1 minor enhancement
