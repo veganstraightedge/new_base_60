@@ -4,6 +4,6 @@ Manifest.txt
 README.rdoc
 Rakefile
 lib/new_base_60.rb
-bin/ds
-bin/sd
+bin/dec_to_sxg
+bin/sxg_to_dec
 test/test_new_base_60.rb
