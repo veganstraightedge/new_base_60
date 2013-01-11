@@ -48,9 +48,10 @@ If you want a shortcut, add this to your .bash_profile:
 
 == CREDITS:
 
-* Original Idea : Tantek Çelik
-* Ruby Port : Shane Becker
-* Lotsa Cleanup : John Barnette
+* Original Idea : Tantek Çelik (@tantek)
+* Ruby Port : Shane Becker (@veganstraightedge)
+* Lotsa Cleanup : John Barnette (@jbarnette)
+* Command Line Scripts : Aaron Parecki (@aaronpk)
 
 == LICENSE:
 

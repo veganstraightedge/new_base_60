@@ -1,8 +1,8 @@
-=== 1.0.6 / 2013-01-10
+=== 1.1 / 2013-01-10
 
 * 1 minor enhancement
 
-  * Added command line script `sd` and `ds` for converting on the command line
+  * Added command line script `sxg_to_dec` and `dec_to_sxg` for converting on the command line by Aaron Parecki (@aaronpk)
 
 === 1.0.4 / 2011-02-15
 
@@ -20,8 +20,8 @@
 
 * 2 minor enhancement
 
-  * Code cleanup thanks to John Barnette
-  * Credits section added to README, props to Tantek Çelik for original idea
+  * Code cleanup thanks to John Barnette (@jbarnette)
+  * Credits section added to README, props to Tantek Çelik (@tantek) for original idea
 
 === 1.0.1 / 2010-06-11
 

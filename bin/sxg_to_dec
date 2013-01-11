@@ -3,4 +3,3 @@
 require 'new_base_60'
 n = NewBase60.new(ARGV[0])
 puts n.to_i
-
