@@ -1,7 +1,7 @@
 .autotest
-CHANGELOG.rdoc
+CHANGELOG.md
 Manifest.txt
-README.rdoc
+README.md
 Rakefile
 lib/new_base_60.rb
 bin/dec_to_sxg
