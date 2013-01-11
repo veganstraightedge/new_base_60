@@ -30,6 +30,18 @@ How to use:
   puts n.to_date.to_s     # => "2010-06-04"
   puts n.to_date.to_sxg   # => "464"
 
+Or, on the command line:
+
+  $ dec_to_sxg 115727
+  Y8n
+  $ sxg_to_dec Y8n
+  115727
+
+If you want a shortcut, add this to your .bash_profile:
+
+  alias sd="sxg_to_dec"
+  alias ds="dec_to_sxg"
+
 == INSTALL:
 
 * sudo gem install new_base_60

@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+
+require 'new_base_60'
+puts ARGV[0].to_i.to_sxg
+
