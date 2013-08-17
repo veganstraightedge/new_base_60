@@ -1,3 +1,4 @@
+require 'minitest'
 require 'minitest/autorun'
 require 'new_base_60'
 

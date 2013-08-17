@@ -1,3 +1,7 @@
+# 1.1.2 / 2013-08-16
+## 1 bug fix
+* Required minitest before minitest/autorun to remove runtime warning
+
 # 1.1 / 2013-01-10
 ## 1 minor enhancement
 * Added command line script `sxg_to_dec` and `dec_to_sxg` for converting on the command line by Aaron Parecki (@aaronpk)
