@@ -56,11 +56,17 @@ sudo gem install new_base_60
 ```
 
 # Credits
+## Contributors
 
-* Original Idea : Tantek Çelik (@tantek)
-* Ruby Port : Shane Becker (@veganstraightedge)
-* Lotsa Cleanup : John Barnette (@jbarnette)
-* Command Line Scripts : Aaron Parecki (@aaronpk)
+* [Original Idea](http://tantek.com/w/NewBase60 "tantek / NewBase60") : [Tantek Çelik](http://tantek.com "tantek.com") ([@tantek](https://github.com/tantek))
+* Ruby Port : [Shane Becker](http://iamshane.com "I&#x27;m Shane Becker") ([@veganstraightedge](https://github.com/veganstraightedge))
+* [John Barnette](http://www.jbarnette.com "John Barnette") ([@jbarnette](https://github.com/jbarnette))
+* [Ivan Storck](http://ivanoats.com "Ivan Storck") ([@ivanoats](https://github.com/ivanoats))
+* [Bookis Smuin](https://twitter.com/bookis) ([@bookis](https://github.com/bookis))
+* [Chris Raethke](https://github.com/veganstraightedge/new_base_60/commit/725bbcc8f05016bca59a2643cc03cc25f14eedd0)
+* [Faun](http://www.saschawinter.com "Sascha Faun Winter") ([@faun](https://github.com/faun))
+* [Aaron Parecki](http://aaronparecki.com "Aaron Parecki") ([@aaronpk](https://github.com/aaronpk))
+
 
 
 
