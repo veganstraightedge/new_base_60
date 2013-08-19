@@ -62,8 +62,16 @@ sudo gem install new_base_60
 * Lotsa Cleanup : John Barnette (@jbarnette)
 * Command Line Scripts : Aaron Parecki (@aaronpk)
 
+
+
 ## License
 
-**PUBLIC DOMAIN.**
-Your heart is as free as the air you breathe.
+**PUBLIC DOMAIN**
+
+Your heart is as free as the air you breathe. <br>
 The ground you stand on is liberated territory.
+
+In legal text, new_base_60 is dedicated to the public domain
+using Creative Commons -- CC0 1.0 Universal.
+
+[http://creativecommons.org/publicdomain/zero/1.0](http://creativecommons.org/publicdomain/zero/1.0 "Creative Commons &mdash; CC0 1.0 Universal")
