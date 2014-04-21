@@ -1,17 +1,17 @@
 # New Base 60
 
-http://github.com/veganstraightedge/new_base_60
+https://github.com/veganstraightedge/new_base_60
 
 ## Description
 
 Handy Conversion Sexagesimal (base 60) for Short URLs
 Cuts out ambiguous characters like:
 
-* l : lowercase l (looks like a 1 : one)
-* I : capital   I (looks like a 1 : one)
-* O : capital   O (looks like a 0 : zero)
+* `l` : lowercase `L` (looks like a `1` : one)
+* `I` : capital   `i` (looks like a `1` : one)
+* `O` : capital   `o` (looks like a `0` : zero)
 
-Based on work done by Tantek Çelik : [http://tantek.pbworks.com/New_base_60](http://tantek.pbworks.com/New_base_60 "tantek / New_base_60")
+Based on work done by Tantek Çelik : [http://ttk.me/w/NewBase60](http://ttk.me/w/NewBase60 "tantek / NewBase60")
 
 ## Features/Problems
 
